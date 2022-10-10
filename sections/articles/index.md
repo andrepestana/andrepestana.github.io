@@ -6,6 +6,8 @@
 
 {{ article.excerpt }}
 
+<p style="text-align: right"><a :href="`${constants.baseUrl}${article.path}`">Read more</a></p>
+
 **~ {{ article.author }}** ({{ transformDate(article.updated) }})
 
 </div>

@@ -8,6 +8,8 @@ Here you can find some of my personal projects.
 
 {{ project.excerpt }}
 
+<p style="text-align: right"><a :href="`${constants.baseUrl}${project.path}`">Read more</a></p>
+
 **~ {{ project.author }}** ({{ transformDate(project.updated) }})
 
 </div>

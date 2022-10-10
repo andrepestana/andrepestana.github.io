@@ -1,12 +1,14 @@
 # Latest posts
 
-<div v-for="article in articles">
+<div v-for="post in posts">
 
-<h2><a :href="`${constants.baseUrl}${article.path}`">{{ article.title }}</a></h2>
+<h2><a :href="`${constants.baseUrl}${post.path}`">{{ post.title }}</a></h2>
 
-{{ article.excerpt }}
+{{ post.excerpt }}
 
-**~ {{ article.author }}** ({{ transformDate(article.updated) }})
+<p style="text-align: right"><a :href="`${constants.baseUrl}${post.path}`">Read more</a></p>
+
+**~ {{ post.author }}** ({{ transformDate(post.updated) }})
 
 </div>
 
@@ -14,8 +16,8 @@
 import data from '../../data.json'
 import constants from '../../.vitepress/constants.js'
 
-// sort articles
-const articles = data['blog'].sort(
+// sort posts
+const posts = data['blog'].sort(
   (a, b) => new Date(b.updated) - new Date(a.updated)
 )
 
