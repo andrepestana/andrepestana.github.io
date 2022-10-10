@@ -9,7 +9,7 @@
     "gray-matter": "latest",
     "nodemon": "latest",
     "remove-markdown": "latest",
-    "vitepress": "latest",
+    "vitepress": "^1.0.0-alpha.19",
     "vue": "latest"
   }
 }
