@@ -48,10 +48,14 @@ for (const section of sections) {
         const tag = arrayOfTags[index].trim();
         // console.log('tag', tag)
 
+        const newTag = {
+          link: path.substring(1).replace(/\.md$/, '.html'),
+          title: data.title
+        }
         if (allTags[tag]) {
-          allTags[tag].push(path.substring(1))
+          allTags[tag].push(newTag)
         } else {
-          allTags[tag] = [path.substring(1)]
+          allTags[tag] = [newTag]
         }
       }
     }
