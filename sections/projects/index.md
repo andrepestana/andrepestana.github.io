@@ -1,9 +1,4 @@
----
-title: Personal Projects
-updated: 2022-10-09 17:43:49-07
----
-
-# {{ $frontmatter.title }}
+# Personal Projects
 
 Here you can find some of my personal projects.
 
