@@ -85,7 +85,7 @@ export default defineConfig({
             message: 'Made by Andre Pestana with ❤️<br/>2022',
         },
         editLink: {
-            pattern: 'https://github.com/andrepestana/superpestana/edit/main/docs/:path',
+            pattern: 'https://github.com/andrepestana/andrepestana.github.io/edit/main/:path',
             text: 'Edit this page'
         }
     }
