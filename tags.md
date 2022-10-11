@@ -3,7 +3,7 @@
 ---
 
 <div v-if="taggedPages.length">
-    <h2>{{selectedTag}}</h2>
+    <h2>Pages tagged as "{{selectedTag}}"</h2>
     <hr/>
     <div v-for="(taggedPage, index) in taggedPages" 
         :key="index">
@@ -16,7 +16,7 @@
     <span :style="{ fontSize: tag.weight + 'px' }"><a @click="getLinksFor(tag.label)">{{ tag.label }}</a></span>&nbsp;
 </span>
 
-<span v-if="taggedPages.length"><a @click="getLinksFor('')"><-- Back to Tags</a></span>&nbsp;
+<p v-if="taggedPages.length" style="text-align: right"><a @click="getLinksFor('')">⬅️ Back to Tags</a></p>&nbsp;
 
 <script setup>
 import {computed, onMounted, ref} from 'vue';
@@ -42,7 +42,7 @@ const tagLabels = []
 Object.keys(tags).forEach(label => {
     // console.log('label', label)
     // console.log('tags[label]', )
-    const weight = (100 * tags[label].length) / Object.keys(tags).length
+    const weight = ((100 * tags[label].length) / Object.keys(tags).length) + 4
     tagLabels.push({label, weight})
 });
 </script>

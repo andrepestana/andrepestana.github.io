@@ -6,7 +6,7 @@
 
 {{ post.excerpt }}
 
-<p style="text-align: right"><a :href="`${constants.baseUrl}${post.path}`">Read more</a></p>
+<p style="text-align: right"><a :href="`${constants.baseUrl}${post.path}`">📖 Read more</a></p>
 
 **~ {{ post.author }}** ({{ transformDate(post.updated) }})
 
