@@ -1,4 +1,6 @@
 {
+  "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "concurrently \"nodemon --watch sections -e md collect-data.mjs\" vitepress",
     "build": "node collect-data.mjs && vitepress build",

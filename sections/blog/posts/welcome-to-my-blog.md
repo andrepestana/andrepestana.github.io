@@ -18,7 +18,7 @@ my way, would be low cost and simple. I used Jekyll before and it was cooll but 
 - No need for a DB
 - Written in JS with Vue.js
 
-<Disqus shortname='andre-pestana' />
+<!-- <Disqus shortname='andre-pestana' />
 <script setup>
 import { Disqus } from 'vue-disqus'
-</script>
+</script> -->
