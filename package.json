@@ -10,6 +10,7 @@
     "nodemon": "latest",
     "remove-markdown": "latest",
     "vitepress": "^1.0.0-alpha.19",
-    "vue": "latest"
+    "vue": "latest",
+    "vue-disqus": "^5.1.0"
   }
 }
