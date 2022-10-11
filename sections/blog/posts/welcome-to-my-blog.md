@@ -19,9 +19,10 @@ my way, would be low cost and simple. I used Jekyll before and it was cooll but 
 - Written in JS with Vue.js
 
 <div id="disqus_thread"></div>
-<script>
-    const PAGE_URL = 'https://andrepestana.github.io/sections/blog/posts/welcome-to-my-blog.html'
-    const PAGE_IDENTIFIER = 'x'
+
+<component :is="'script'">
+    var PAGE_URL = 'https://andrepestana.github.io/sections/blog/posts/welcome-to-my-blog.html';
+    var PAGE_IDENTIFIER = 'x';
     
     var disqus_config = function () {
     this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
@@ -34,5 +35,4 @@ my way, would be low cost and simple. I used Jekyll before and it was cooll but 
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
     })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</component>
