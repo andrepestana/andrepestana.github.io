@@ -21,7 +21,7 @@ my way, would be low cost and simple. I used Jekyll before and it was cooll but 
 <div id="disqus_thread"></div>
 <script>
     const PAGE_URL = 'https://andrepestana.github.io/sections/blog/posts/welcome-to-my-blog.html'
-    const PAGE_IDENTIFIER = 'a'
+    const PAGE_IDENTIFIER = 'x'
     
     var disqus_config = function () {
     this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
