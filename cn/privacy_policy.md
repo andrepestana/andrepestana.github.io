@@ -1,6 +1,5 @@
 ---
 title: Chuck Norris Jokes - Privacy Policy
-layout: none
 ---
 
 # {{ $frontmatter.title }}
@@ -112,14 +111,19 @@ This privacy policy page was created at
 import { onMounted, onUnmounted } from 'vue'
 onMounted(() => {
   document.body.classList.add('no-nav')
+  document.body.classList.add('no-footer')
 })
 onUnmounted(() => {
   document.body.classList.remove('no-nav')
+  document.body.classList.remove('no-footer')
 })
 </script>
 
 <style>
 .no-nav .VPNav {
+  display: none;
+}
+.no-footer .VPFooter {
   display: none;
 }
 </style>

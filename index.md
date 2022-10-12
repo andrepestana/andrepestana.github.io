@@ -16,6 +16,9 @@ hero:
   name: Andre Pestana
   text: Software Developer
   tagline: “When you arise in the morning think of what a privilege it is to be alive, to think, to enjoy, to love...” ― Marcus Aurelius.
+  image:
+    src: /avatar.jpeg
+    alt: Andre Pestana
   actions:
     - theme: brand
       text: Blog
@@ -38,3 +41,22 @@ features:
   #   details: Lorem ipsum...
 aside: false
 ---
+
+<script setup>
+import { onMounted, onUnmounted } from 'vue'
+onMounted(() => {
+  document.body.classList.add('round')
+
+})
+onUnmounted(() => {
+  document.body.classList.remove('round')
+
+})
+</script>
+
+<style>
+.round .VPImage {
+  border-radius: 50%;
+}
+
+</style>
