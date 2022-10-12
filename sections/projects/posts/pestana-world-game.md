@@ -5,8 +5,6 @@ author: Andre Pestana
 tags: game, javascript, phaser, fun
 ---
 
-# {{ $frontmatter.title }}
-
 It’s just a simple arcade game I started developing to learn Phaser3 and have some fun. Phaser 3 is a javascript framework and it makes development really fun.
 
 <!-- more -->

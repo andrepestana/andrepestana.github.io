@@ -1,15 +1,14 @@
 
 import DefaultTheme from "vitepress/theme";
 import './custom.css'
-//import VueDisqus from 'vue-disqus';
+import MyLayout from './components/MyLayout.vue'
 
 console.log('DefaultTheme', DefaultTheme)
 
 export default {
     ...DefaultTheme,
-    async enhanceApp({ app }) {
-
-        //app.use(VueDisqus, { shortname: 'andre-pestana' })
-
+    Layout: MyLayout,
+    enhanceApp({ app, router, siteData }) {
+        //
     },
 };

@@ -4,8 +4,6 @@ updated: 2022-10-09 10:55:54-07
 title: Welcome to my blog! 🎉
 ---
 
-# {{ $frontmatter.title }}
-
 Hello and welcome! I hope this is the first post of a thousands more.
 
 For a long time I've been looking for a blog solution like vuepress or vitepress which could give me some freedom to do the things

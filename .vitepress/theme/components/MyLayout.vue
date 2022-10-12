@@ -1,0 +1,41 @@
+<script setup>
+import DefaultTheme from 'vitepress/theme'
+
+const { Layout } = DefaultTheme
+</script>
+
+<template>
+    <Layout>
+        <template #doc-before>
+            <div class="vp-doc">
+                <h1 id="frontmatter-title" tabindex="-1">
+                    {{ $frontmatter.title }}
+                    <a class="header-anchor" href="#frontmatter-title" aria-hidden="true">#</a>
+                </h1>
+                <template v-if="$frontmatter.tags">
+                    tags: {{ $frontmatter.tags }}
+                </template>
+            </div>
+        </template>
+        <!-- <template #doc-after>
+            doc-after
+        </template>
+        <template #aside-top></template>
+        side-top
+        <template #aside-bottom>
+            aside-bottom
+        </template>
+        <template #aside-outline-before>
+            aside-outline-before
+        </template>
+        <template #aside-outline-after>
+            aside-outline-after
+        </template>
+        <template #aside-ads-before>
+            aside-ads-before
+        </template>
+        <template #aside-ads-after>
+            aside-ads-after
+        </template> -->
+    </Layout>
+</template>

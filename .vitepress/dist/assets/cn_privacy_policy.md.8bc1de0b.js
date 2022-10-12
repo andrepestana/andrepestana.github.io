@@ -1,4 +1,4 @@
-import{e as t,f as i,o as a,c as r,a as e,b as s,t as n,d as c}from"./app.93e49c2f.js";const l={id:"frontmatter-title",tabindex:"-1"},d=e("a",{class:"header-anchor",href:"#frontmatter-title","aria-hidden":"true"},"#",-1),h=c(`<p>Andre Luis Silva Pestana built the Chuck Norris Jokes app as an Ad Supported app. This SERVICE is provided by Andre Luis Silva Pestana at no cost and is intended for use as is.</p><pre><code>This page is used to inform visitors regarding my
+import{e as t,f as i,o as a,c as r,a as e,b as s,t as n,d as c}from"./app.53b10eea.js";const l={id:"frontmatter-title",tabindex:"-1"},d=e("a",{class:"header-anchor",href:"#frontmatter-title","aria-hidden":"true"},"#",-1),h=c(`<p>Andre Luis Silva Pestana built the Chuck Norris Jokes app as an Ad Supported app. This SERVICE is provided by Andre Luis Silva Pestana at no cost and is intended for use as is.</p><pre><code>This page is used to inform visitors regarding my
 policies with the collection, use, and disclosure of Personal
 Information if anyone decided to use my Service.
 
