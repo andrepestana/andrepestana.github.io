@@ -16,7 +16,7 @@ const { Layout } = DefaultTheme
                     tags:
                     <span v-for="(tag, index) in $frontmatter.tags.split(',').map(element => element.trim())"
                         :key="index">
-                        <a :href=" `/tags.html?tag=${tag}`">{{tag}}&nbsp;</a>
+                        🏷️<a :href=" `/tags.html?tag=${tag}`">{{tag}}&nbsp;</a>
                     </span>
                 </template>
             </div>
