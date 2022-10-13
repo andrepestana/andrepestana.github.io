@@ -23,6 +23,11 @@ import {computed, onMounted, ref} from 'vue';
 import tags from './tags.json'
 import {useRouter} from "vitepress";
 
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const tagFromQueryParams = urlParams.get('tag')
+console.log('tagFromQueryParams', tagFromQueryParams)
+
 const taggedPages = ref([])
 const selectedTag = ref('')
 const getLinksFor = (sTag) => {
@@ -45,4 +50,10 @@ Object.keys(tags).forEach(label => {
     const weight = ((100 * tags[label].length) / Object.keys(tags).length) + 4
     tagLabels.push({label, weight})
 });
+
+if(tagFromQueryParams) {
+    getLinksFor(tagFromQueryParams)
+    //Remove query from browser url
+    history.pushState(null, "", location.href.split("?")[0]);
+}
 </script>

@@ -13,7 +13,11 @@ const { Layout } = DefaultTheme
                     <a class="header-anchor" href="#frontmatter-title" aria-hidden="true">#</a>
                 </h1>
                 <template v-if="$frontmatter.tags">
-                    tags: {{ $frontmatter.tags }}
+                    tags:
+                    <span v-for="(tag, index) in $frontmatter.tags.split(',').map(element => element.trim())"
+                        :key="index">
+                        <a :href=" `/tags.html?tag=${tag}`">{{tag}}&nbsp;</a>
+                    </span>
                 </template>
             </div>
         </template>
