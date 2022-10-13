@@ -3,8 +3,6 @@ title: About
 updated: 2022-10-09 11:21:23-07
 ---
 
-# {{ $frontmatter.title }}
-
 ## Professional
 
 My name is Andre Pestana and I'm a software developer based in Canada with more than 15 years of experience, working as full stack developer for the latest five years. The things I enjoy working with most are: Javascript (Vue.js and Node.js), Linux/Unix based OSes and
