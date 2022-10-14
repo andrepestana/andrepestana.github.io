@@ -1,6 +1,6 @@
-# Latest articles
+# Coming soon...
 
-<div v-for="article in articles">
+<!-- <div v-for="article in articles">
 
 <h2><a :href="`${constants.baseUrl}${article.path}`">{{ article.title }}</a></h2>
 
@@ -26,4 +26,4 @@ const transformDate = (date) =>
     month: 'long',
     day: 'numeric'
   })
-</script>
+</script> -->
