@@ -18,7 +18,7 @@ for (const section of sections) {
     articles[section].map(async (article) => {
       const file = matter.read(`./sections/${section}/posts/${article}`)
       const excerpt = readFileSync(`./sections/${section}/posts/${article}`, 'utf8').split('<!-- excerpt -->')[1] || ''
-      console.log('excerpt', excerpt)
+      // console.log('excerpt', excerpt)
       const { data, path } = file
       const contents = removeMd(excerpt).trim().split(/\r\n|\n|\r/)
 
