@@ -13,6 +13,6 @@ Imagine that it is raining beer and at the same time a new virus starts to infec
 
 **[Play now](https://andrepestana.github.io/pestana-world/)**
 
-![Pestana World screenshot](screenshot.jpg)
+![Pestana World screenshot](../../../public/screenshot.jpg)
 
 It’s just a simple arcade game I started developing to learn Phaser3 and have some fun. Phaser 3 is a javascript framework and it makes development really fun.
