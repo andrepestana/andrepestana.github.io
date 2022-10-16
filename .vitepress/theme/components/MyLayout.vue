@@ -19,6 +19,15 @@ const { Layout } = DefaultTheme
                         🏷️<a :href=" `/tags.html?tag=${tag}`">{{tag}}&nbsp;</a>
                     </span>
                 </template>
+                <div v-if="$frontmatter.giphy">
+                    <div :style="{
+                    'width': '100%', 
+                    'height': '0',
+                    'padding-bottom': $frontmatter.giphyPaddingBottom,
+                    'position': 'relative'}"><iframe :src="$frontmatter.giphy" width="100%" height="100%"
+                            style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                    </div>
+                </div>
             </div>
         </template>
         <!-- <template #doc-after>
