@@ -1,3 +1,7 @@
+---
+layout: doc
+---
+
 # Latest posts
 
 <div v-for="post in posts">
