@@ -29,7 +29,4 @@ For a long time I've been looking for a blog solution like [Jekyll](https://jeky
 
 Vuepress and Vitepress were developed to create Documentation. So many examples on the internet seems to mention _docs_ folder as the main folder but it seems to be changing in the latest versions of Vitepress. I see many people adopting Vitepress as a tool for blogging and other types of websites. At the moment I'm writing it is still in alpha version 1.0.0-alpha.21 and it's pretty good and usable. Of course there is some documentation to improve, the customization is not _that_ easy yet but I'm already very excited about it!
 
-<!-- <Disqus shortname='andre-pestana' />
-<script setup>
-import { Disqus } from 'vue-disqus'
-</script> -->
+<div id="disqus_thread"></div>
