@@ -2,6 +2,16 @@
 import DefaultTheme from 'vitepress/theme'
 
 const { Layout } = DefaultTheme
+
+
+var disqus_config = function () {
+    this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = 'andre-pestana'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+var d = document, s = d.createElement('script');
+s.src = 'https://andre-pestana.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
 </script>
 
 <template>
@@ -30,10 +40,10 @@ const { Layout } = DefaultTheme
                 </div>
             </div>
         </template>
-        <!-- <template #doc-after>
-            doc-after
+        <template #doc-after>
+            <div id="disqus_thread"></div>
         </template>
-        <template #aside-top></template>
+        <!-- <template #aside-top></template>
         side-top
         <template #aside-bottom>
             aside-bottom
