@@ -12,14 +12,14 @@ const { Layout } = DefaultTheme
                     {{ $frontmatter.title }}
                     <a class="header-anchor" href="#frontmatter-title" aria-hidden="true">#</a>
                 </h1>
-                <template v-if="$frontmatter.tags">
+                <span v-if="$frontmatter.tags" style="padding-bottom: 20px">
                     tags:
                     <span v-for="(tag, index) in $frontmatter.tags.split(',').map(element => element.trim())"
                         :key="index">
                         🏷️<a :href=" `/tags.html?tag=${tag}`">{{tag}}&nbsp;</a>
                     </span>
-                </template>
-                <div v-if="$frontmatter.giphy">
+                </span>
+                <div v-if="$frontmatter.giphy" style="margin-bottom: 20px; margin-top: 20px">
                     <div :style="{
                     'width': '100%', 
                     'height': '0',

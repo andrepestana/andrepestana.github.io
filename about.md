@@ -17,3 +17,7 @@ My first language is Brazilian Portuguese and I have been studying English for a
 ## Hobbies
 
 I wish I had more time for hobbies. I used to play the drums but it's an instrument that is hard to keep and maintain. It requires space and everybody knows how noisy it is. Lately I've been giving more attention to the Guitars. I'm practicing some easy songs through Youtube and having so much fun with my daughter.
+
+<script setup>
+
+</script>
