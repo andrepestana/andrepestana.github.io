@@ -28,3 +28,7 @@ It’s just a simple arcade game I started developing to learn [Phaser3](https:/
 On desktop, please use the left/right arrows to move the character to the sides and up arrow to jump. On mobile, please use the virtual joystick buttons added to the game as shown below:
 
 ![Pestana World screenshot](/pestana-world-mobile.jpg)
+
+## Source code
+
+[Source code on Github](https://github.com/andrepestana/pestana-world)

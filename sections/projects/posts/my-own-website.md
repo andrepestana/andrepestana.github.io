@@ -18,4 +18,8 @@ This website is coded using [Vitepress](https://vitepress.vuejs.org/) that is a 
 
 ## How it works
 
-![andrepestana.github.io sequence diagram](/public/andrepestana.github.io.svg)
+![andrepestana.github.io sequence diagram](/andrepestana.github.io.svg)
+
+## Source code
+
+[Source code on Github](https://github.com/andrepestana/andrepestana.github.io)

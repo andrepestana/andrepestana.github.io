@@ -1,0 +1,1 @@
+import{_ as e,o as a,c as t}from"./app.cbe5708a.js";const d=JSON.parse('{"title":"Learning Languages","description":"","frontmatter":{"title":"Learning Languages"},"headers":[],"relativePath":"languages.md","lastUpdated":null}'),n={name:"languages.md"};function s(r,o,c,g,l,i){return a(),t("div")}const _=e(n,[["render",s]]);export{d as __pageData,_ as default};
