@@ -23,3 +23,8 @@ This website is coded using [Vitepress](https://vitepress.vuejs.org/) that is a 
 ## Source code
 
 [Source code on Github](https://github.com/andrepestana/andrepestana.github.io)
+
+<div class="fb-comments" data-colorscheme="dark"
+    data-href="https://andrepestana.github.io/sections/projects/posts/my-own-website.html"
+    data-width="100%" data-numposts="5">
+</div>

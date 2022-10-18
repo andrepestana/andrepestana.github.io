@@ -9,8 +9,6 @@ export default {
     ...DefaultTheme,
     Layout: MyLayout,
     enhanceApp({ app, router, siteData }) {
-        //
-
 
     },
 };

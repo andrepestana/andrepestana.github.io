@@ -27,6 +27,13 @@ for (const projectPost of projectPosts) {
 
 export default defineConfig({
     description: 'Andre Pestana website',
+    head: [
+        [
+            'script',
+            { "src": "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0&appId=1496093344138042&autoLogAppEvents=1" },
+            { "nonce": "OfwSQFPA" }
+        ]
+    ],
     lang: 'en-US',
     lastUpdated: true,
     lastUpdatedText: 'Update Date',
@@ -90,3 +97,4 @@ export default defineConfig({
         }
     }
 })
+
