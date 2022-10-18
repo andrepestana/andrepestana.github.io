@@ -33,7 +33,7 @@ On desktop, please use the left/right arrows to move the character to the sides 
 
 [Source code on Github](https://github.com/andrepestana/pestana-world)
 
-<div class="fb-comments" data-colorscheme="dark"
+<!-- <div class="fb-comments" data-colorscheme="dark"
     data-href="https://andrepestana.github.io/sections/projects/posts/pestana-world-game.html"
     data-width="100%" data-numposts="5">
-</div>
+</div> -->

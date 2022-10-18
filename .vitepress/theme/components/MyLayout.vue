@@ -32,8 +32,8 @@ const { Layout } = DefaultTheme
                 </div>
             </div>
         </template>
-        <template #doc-after>
-        </template>
+        <!-- <template #doc-after>
+        </template> -->
         <!-- <template #aside-top></template>
         side-top
         <template #aside-bottom>

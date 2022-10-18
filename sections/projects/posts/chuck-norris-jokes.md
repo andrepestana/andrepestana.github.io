@@ -31,7 +31,7 @@ You can check it out on Google Play Store:
 
 Google Play and the Google Play logo are trademarks of Google LLC.
 
-<div class="fb-comments" data-colorscheme="dark"
+<!-- <div class="fb-comments" data-colorscheme="dark"
     data-href="https://andrepestana.github.io/sections/projects/posts/chuck-norris-jokes.html"
     data-width="100%" data-numposts="5">
-</div>
+</div> -->
