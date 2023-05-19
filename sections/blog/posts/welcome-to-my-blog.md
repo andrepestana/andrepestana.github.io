@@ -10,7 +10,7 @@ giphyPaddingBottom: 75%
 
 Hello and welcome! I hope this is the first post of thousands more.
 
-For a long time I've been looking for a blog solution like [Jekyll](https://jekyllrb.com/), [Vuepress](https://vuepress.vuejs.org/) or [Vitepress](https://vitepress.vuejs.org/) which could give me some freedom to do the things my own way, would be low cost and simple. I used Jekyll before and it was cool but it is written in Ruby and I'm not interested in learning to code in Ruby now. Now I'm using Vitepress and I'm pretty satisfied with it. Some of the features I like from it are:
+For a long time, I've been looking for a blog solution like [Jekyll](https://jekyllrb.com/), [Vuepress](https://vuepress.vuejs.org/), or [Vitepress](https://vitepress.vuejs.org/) which could give me some freedom to do the things my way, would be low cost and simple. I've used Jekyll before and it was cool, but it is a Ruby app and I'm not interested in learning to code in Ruby now. Now I'm using Vitepress and I'm pretty satisfied with it. Some of the features I like about it are:
 
 <!-- excerpt -->
 

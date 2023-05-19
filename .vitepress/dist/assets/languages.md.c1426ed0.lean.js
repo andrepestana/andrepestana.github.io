@@ -1,0 +1,1 @@
+import{_ as e,o as a,c as t}from"./app.3987c784.js";const l=JSON.parse('{"title":"Learning Languages","description":"","frontmatter":{"title":"Learning Languages"},"headers":[],"relativePath":"languages.md","lastUpdated":1666032313000}'),n={name:"languages.md"};function s(r,o,c,g,i,p){return a(),t("div")}const _=e(n,[["render",s]]);export{l as __pageData,_ as default};
