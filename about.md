@@ -12,7 +12,7 @@ hybrid mobile development ([QuasarFramework](https://quasar.dev/)). I also have 
 
 ## Spoken Languages
 
-My first language is Brazilian Portuguese and I have been studying English for a long time. Lately, I've been improving my Spanish (which I can understand well because of the similarities with Portuguese) and French on Duolingo.
+My first language is Brazilian Portuguese and I have been studying English for a long time. Lately, I've been improving my Spanish (which I can understand well because of the similarities with Portuguese) and practicing French on Duolingo.
 
 ## Hobbies
 
