@@ -2,7 +2,7 @@
 layout: doc
 ---
 
-# Personal Articles
+# Articles
 
 Here you can find some articles about things I use or find interesting.
 
