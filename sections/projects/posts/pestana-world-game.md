@@ -16,7 +16,7 @@ This is a work of fiction. Any similarity to actual persons, living or dead, or 
 <!-- excerpt -->
 
 <h1 align="center">
-  <a href="https://andrepestana.github.io/pestana-world/" target="new_window">Play Now!</a>
+  <a href="https://andrepestana.github.io/pestana-world/" target="_blank">Play Now!</a>
 </h1>
 
 ![Pestana World screenshot](/screenshot.jpg)
