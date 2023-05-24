@@ -57,3 +57,8 @@ if(tagFromQueryParams) {
     history.pushState(null, "", location.href.split("?")[0]);
 }
 </script>
+<style>
+a:hover {
+ cursor:pointer;
+}
+</style>
