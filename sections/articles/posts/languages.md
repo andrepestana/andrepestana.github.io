@@ -14,3 +14,5 @@ Some resources for learning Spanish on the web.
 ## TV Channels
 
 [My playlist with some live spanish speaking tv channels](https://www.youtube.com/watch?v=HPiv1pzIPRc&list=PLdfr6HQrFBncuisWM9TkaNfN3oniL5XqN)
+
+[spanishpod101](https://www.spanishpod101.com/)
