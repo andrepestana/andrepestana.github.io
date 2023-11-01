@@ -15,4 +15,8 @@ Some resources for learning Spanish on the web.
 
 [My playlist with some live spanish speaking tv channels](https://www.youtube.com/watch?v=HPiv1pzIPRc&list=PLdfr6HQrFBncuisWM9TkaNfN3oniL5XqN)
 
-[spanishpod101](https://www.spanishpod101.com/)
+[SpanishPod s101](https://www.spanishpod101.com/)
+
+[FSI Spanish language courses](https://www.fsi-language-courses.org/fsi-language-courses/)
+
+[Kultivi Espanhol](https://kultivi.com/cursos/idiomas/espanhol) - Spanish for Portuguese speakers
