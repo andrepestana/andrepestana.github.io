@@ -1,6 +1,6 @@
 ---
 title: About
-updated: 2022-10-09 11:21:23-07
+updated: 2024-07-03 07:20:09
 ---
 
 ## Me, myself and I
