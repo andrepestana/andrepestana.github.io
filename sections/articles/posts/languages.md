@@ -11,24 +11,6 @@ Some resources for learning Spanish and French on the web.
 
 <!-- excerpt -->
 
-## Spanish
-
-### TV Channels
-
-[My Youtube playlist with some live Spanish speaking tv channels](https://www.youtube.com/watch?v=HPiv1pzIPRc&list=PLdfr6HQrFBncuisWM9TkaNfN3oniL5XqN)
-
-### Podcasts
-
-[SpanishPod s101](https://www.spanishpod101.com/)
-
-### Online courses
-
-[Lingolia español](https://espanol.lingolia.com/es/)
-
-[FSI Spanish language courses](https://www.fsi-language-courses.org/fsi-language-courses/)
-
-[Kultivi Espanhol](https://kultivi.com/cursos/idiomas/espanhol) - Spanish for Portuguese speakers
-
 ## French
 
 ### TV Channels
@@ -60,3 +42,21 @@ Some resources for learning Spanish and French on the web.
 ### Reading
 
 [1 jour 1 actu](https://www.1jour1actu.com/)
+
+## Spanish
+
+### TV Channels
+
+[My Youtube playlist with some live Spanish speaking tv channels](https://www.youtube.com/watch?v=HPiv1pzIPRc&list=PLdfr6HQrFBncuisWM9TkaNfN3oniL5XqN)
+
+### Podcasts
+
+[SpanishPod s101](https://www.spanishpod101.com/)
+
+### Online courses
+
+[Lingolia español](https://espanol.lingolia.com/es/)
+
+[FSI Spanish language courses](https://www.fsi-language-courses.org/fsi-language-courses/)
+
+[Kultivi Espanhol](https://kultivi.com/cursos/idiomas/espanhol) - Spanish for Portuguese speakers
