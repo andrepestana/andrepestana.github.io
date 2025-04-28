@@ -16,7 +16,7 @@
     <span :style="{ fontSize: tag.weight + 'px' }"><a @click="getLinksFor(tag.label)">{{ tag.label }}</a></span>&nbsp;
 </span>
 
-<p v-if="taggedPages.length" style="text-align: right"><a @click="getLinksFor('')">⬅️ Back to Tags</a></p>&nbsp;
+<p v-if="taggedPages.length" style="text-align: right"><a @click="getLinksFor('')">⬅️ Back to all Tags</a></p>&nbsp;
 
 <script setup>
 import {computed, onMounted, ref} from 'vue';
@@ -47,7 +47,7 @@ const tagLabels = []
 Object.keys(tags).forEach(label => {
     // console.log('label', label)
     // console.log('tags[label]', )
-    const weight = ((100 * tags[label].length) / Object.keys(tags).length) + 4
+    const weight = ((100 * tags[label].length) / Object.keys(tags).length) + 6
     tagLabels.push({label, weight})
 });
 

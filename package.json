@@ -1,8 +1,9 @@
 {
+  "type": "module",
   "scripts": {
-    "dev": "concurrently \"nodemon --watch sections -e md collect-data.mjs\" vitepress",
+    "dev": "concurrently \"nodemon --watch sections -e md collect-data.mjs\" \"vitepress dev\"",
     "build": "node collect-data.mjs && vitepress build",
-    "serve": "vitepress serve"
+    "preview": "vitepress preview"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
@@ -11,11 +12,14 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/vue-fontawesome": "^3.0.1",
     "concurrently": "latest",
+    "giscus": "latest",
     "gray-matter": "latest",
     "nodemon": "latest",
     "remove-markdown": "^0.5.0",
-    "vitepress": "^1.0.0-alpha.19",
-    "vue": "latest",
-    "vue-disqus": "^5.1.0"
+    "vitepress": "^1.6.3",
+    "vue": "^3.4.0"
+  },
+  "dependencies": {
+    "@giscus/vue": "^3.1.1"
   }
 }

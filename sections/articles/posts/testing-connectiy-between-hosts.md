@@ -3,7 +3,7 @@ author: Andre Pestana
 updated: 2023-05-19 13:16:39
 title: Testing connectivity between hosts
 tags: networking, docker, devops, testing
-giphy: https://giphy.com/embed/1qaUNnTLHyGIxRsS6x
+# giphy: https://giphy.com/embed/1qaUNnTLHyGIxRsS6x
 giphyPaddingBottom: 100%
 ---
 

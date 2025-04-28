@@ -3,7 +3,7 @@ title: Chuck Norris Jokes
 updated: 2022-10-16 12:48:42-07
 author: Andre Pestana
 tags: mobile, vue.js, javascript, quasarframework, fun, android
-giphy: https://giphy.com/embed/ylp4hl9xEaWyc
+# giphy: https://giphy.com/embed/ylp4hl9xEaWyc
 giphyPaddingBottom: 56%
 ---
 

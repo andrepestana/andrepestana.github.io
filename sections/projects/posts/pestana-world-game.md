@@ -3,7 +3,7 @@ title: Pestana World game
 updated: 2022-10-16 12:19:23-07
 author: Andre Pestana
 tags: game, javascript, phaser, fun
-giphy: https://giphy.com/embed/4T8OwS3J5ANRm
+# giphy: https://giphy.com/embed/4T8OwS3J5ANRm
 giphyPaddingBottom: 77%
 ---
 
