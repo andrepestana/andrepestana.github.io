@@ -4,7 +4,7 @@ layout: doc
 
 # Photography
 
-Here you can find some of my shots. It's been a long time since I bought a Nikon D3200 but the hobby started kick me in in 2024/2025.
+Here you can find some of my shots. It's been a long time since I bought a Nikon D3200 in 2011 but the hobby started kick me in in 2024/2025.
 
 <div v-for="article in photography">
 
