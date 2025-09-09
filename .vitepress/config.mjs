@@ -1,27 +1,28 @@
 import { defineConfig } from 'vitepress'
 import { webcrypto } from 'node:crypto'
 import data from '../data.json'
+import { imagetools } from 'vite-imagetools'
 
 // Shim Web Crypto for Node.js
 if (!globalThis.crypto) {
     globalThis.crypto = webcrypto;
 }
 
-const blogPosts = (data['blog'] || []).sort(
-    (a, b) => new Date(b.updated) - new Date(a.updated)
-)
-const blogPostItems = []
-for (const blogPost of blogPosts) {
-    blogPostItems.push({ text: `${blogPost.title}`, link: blogPost.path.split('.html')[0] })
-}
+// const blogPosts = (data['blog'] || []).sort(
+//     (a, b) => new Date(b.updated) - new Date(a.updated)
+// )
+// const blogPostItems = []
+// for (const blogPost of blogPosts) {
+//     blogPostItems.push({ text: `${blogPost.title}`, link: blogPost.path.split('.html')[0] })
+// }
 
-const articlePosts = (data['articles'] || []).sort(
-    (a, b) => new Date(b.updated) - new Date(a.updated)
-)
-const articlePostItems = []
-for (const articlePost of articlePosts) {
-    articlePostItems.push({ text: `${articlePost.title}`, link: articlePost.path.split('.html')[0] })
-}
+// const articlePosts = (data['articles'] || []).sort(
+//     (a, b) => new Date(b.updated) - new Date(a.updated)
+// )
+// const articlePostItems = []
+// for (const articlePost of articlePosts) {
+//     articlePostItems.push({ text: `${articlePost.title}`, link: articlePost.path.split('.html')[0] })
+// }
 
 const projectPosts = (data['projects'] || []).sort(
     (a, b) => new Date(b.updated) - new Date(a.updated)
@@ -31,30 +32,48 @@ for (const projectPost of projectPosts) {
     projectPostItems.push({ text: `${projectPost.title}`, link: projectPost.path.split('.html')[0] })
 }
 
+const photographyPosts = (data['photography'] || []).sort(
+    (a, b) => new Date(b.updated) - new Date(a.updated)
+)
+const photographyPostItems = []
+for (const photographyPost of photographyPosts) {
+    photographyPostItems.push({ text: `${photographyPost.title}`, link: photographyPost.path.split('.html')[0] })
+}
+
 export default defineConfig({
     description: 'Andre Pestana website',
     lang: 'en-US',
     lastUpdated: true,
+    vite: {
+        plugins: [imagetools()]
+    },
     themeConfig: {
         siteTitle: 'Andre Pestana',
         nav: [
-            { text: 'Blog', link: '/sections/blog/' },
-            { text: 'Articles', link: '/sections/articles/' },
+            //{ text: 'Blog', link: '/sections/blog/' },
+            { text: 'Photography', link: '/sections/photography/' },
+            //{ text: 'Articles', link: '/sections/articles/' },
             { text: 'Projects', link: '/sections/projects/' },
             { text: 'Tags', link: '/tags.html' },
             { text: 'About', link: '/about.html' },
         ],
         sidebar: {
-            '/sections/blog/': [
+            // '/sections/blog/': [
+            //     {
+            //         text: 'Blog',
+            //         items: blogPostItems
+            //     }
+            // ],
+            // '/sections/articles/': [
+            //     {
+            //         text: 'Articles',
+            //         items: articlePostItems
+            //     }
+            // ],
+            '/sections/photography/': [
                 {
-                    text: 'Blog',
-                    items: blogPostItems
-                }
-            ],
-            '/sections/articles/': [
-                {
-                    text: 'Articles',
-                    items: articlePostItems
+                    text: 'Photography',
+                    items: photographyPostItems
                 }
             ],
             '/sections/projects/': [

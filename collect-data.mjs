@@ -2,13 +2,18 @@ import fs from 'node:fs/promises'
 import matter from 'gray-matter'
 import removeMd from 'remove-markdown'
 import { readFileSync } from 'fs'
+import path from 'node:path'
 
-const sections = ['blog', 'articles', 'projects']
+const sections = ['photography', 'projects']
 
 let articles = {}
 for (const section of sections) {
   const files = await fs.readdir(`./sections/${section}/posts`)
-  articles[section] = files
+  const EXTENSION = '.md';
+  const targetFiles = files.filter(file => {
+    return path.extname(file).toLowerCase() === EXTENSION;
+  });
+  articles[section] = targetFiles
 }
 
 const data = {}
