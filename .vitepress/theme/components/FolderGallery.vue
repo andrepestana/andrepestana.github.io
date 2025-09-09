@@ -15,7 +15,9 @@
             <button class="ap-nav ap-prev" @click.stop="prev" aria-label="Previous">‹</button>
 
             <figure class="ap-figure" v-if="current">
-                <img :src="current.full" :alt="current.alt" />
+                <div class="ap-viewport">
+                    <img :src="current.full" :alt="current.alt" />
+                </div>
                 <figcaption v-if="current.alt">{{ current.alt }}</figcaption>
             </figure>
 
@@ -25,7 +27,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted, ref } from 'vue'
+import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
 
 interface Props { dir: string; sort?: 'name-asc' | 'name-desc' }
 const props = withDefaults(defineProps<Props>(), { sort: 'name-asc' })
@@ -87,6 +89,11 @@ const lightboxOpen = ref(false)
 const index = ref(0)
 const current = computed(() => images.value[index.value])
 
+watch(lightboxOpen, (open) => {
+    document.body.classList.toggle('ap-modal-open', open)
+})
+onUnmounted(() => document.body.classList.remove('ap-modal-open'))
+
 function open(i: number) { index.value = i; lightboxOpen.value = true }
 function close() { lightboxOpen.value = false }
 function prev() { index.value = (index.value + images.value.length - 1) % images.value.length }
@@ -123,83 +130,112 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
     border-radius: 10px;
 }
 
-/* Lightbox (portrait-safe) */
+/* prevent page scroll under the modal (keep this from before) */
+/* lock page scroll while modal is open (you already added this) */
+:global(body.ap-modal-open) {
+    overflow: hidden;
+}
+
+/* Fullscreen overlay */
 .ap-lightbox {
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, .9);
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-template-rows: 1fr;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    /* outer padding */
     z-index: 1000;
-    padding: 20px;
     overflow: auto;
-    --chrome: 96px;
+    /* allow vertical scroll only if caption is too tall */
 }
 
+/* Figure occupies exactly the viewport (minus padding),
+   image gets the flexible space, caption sits below */
 .ap-figure {
     margin: 0;
-    max-width: min(1200px, 95vw);
-    max-height: calc(100vh - var(--chrome));
+    width: min(100vw - 24px, 1200px);
+    height: calc(100dvh - 24px);
+    /* use dynamic VH; on desktop it's same as 100vh */
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.ap-figure img {
-    object-fit: contain;
+/* The viewport for the image takes remaining space above caption */
+.ap-viewport {
+    flex: 1 1 auto;
+    min-height: 0;
+    /* critical: allows child to shrink instead of overflow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* The image always fits fully within the viewport box */
+.ap-viewport img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
     width: auto;
     height: auto;
-    max-width: 95vw;
-    max-height: calc(100vh - var(--chrome));
+    object-fit: contain;
 }
 
-.ap-close {
-    position: fixed;
-    top: 16px;
-    right: 16px;
-    font-size: 32px;
-    width: 44px;
-    height: 44px;
-    border: 0;
-    border-radius: 6px;
-    background: rgba(255, 255, 255, .1);
-    color: #fff;
-    cursor: pointer;
-}
-
-.ap-nav {
-    font-size: 48px;
-    border: 0;
-    background: transparent;
-    color: #fff;
-    cursor: pointer;
-    user-select: none;
-    width: 64px;
-    height: 64px;
-}
-
-.ap-prev {
-    justify-self: start;
-}
-
-.ap-next {
-    justify-self: end;
-}
-
+/* Caption sits below, wraps, and never pushes the image out of view */
 figcaption {
     color: #bbb;
     text-align: center;
     margin-top: 8px;
     font-size: 0.9rem;
-    max-width: 95vw;
+    max-width: 100%;
     overflow-wrap: anywhere;
 }
 
+/* Close + arrows overlayed (keep your existing styles, shown here for completeness) */
+.ap-close {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    font-size: 28px;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, .12);
+    color: #fff;
+    cursor: pointer;
+}
+
+.ap-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    background: rgba(255, 255, 255, .12);
+    color: #fff;
+    font-size: 32px;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.ap-prev {
+    left: 8px;
+}
+
+.ap-next {
+    right: 8px;
+}
+
 @media (max-width: 640px) {
-    .ap-lightbox {
-        --chrome: 72px;
+
+    /* optional: slightly tighter caption/controls on small screens */
+    figcaption {
+        font-size: 0.85rem;
+        margin-top: 6px;
     }
 }
 </style>
