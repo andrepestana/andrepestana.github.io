@@ -1,4 +1,5 @@
 #!/bin/sh
+npm run prebuild
 npm run build
 git add *
 git add .vitepress
