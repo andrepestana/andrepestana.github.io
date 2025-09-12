@@ -8,37 +8,27 @@ if (!globalThis.crypto) {
     globalThis.crypto = webcrypto;
 }
 
-// const blogPosts = (data['blog'] || []).sort(
-//     (a, b) => new Date(b.updated) - new Date(a.updated)
-// )
-// const blogPostItems = []
-// for (const blogPost of blogPosts) {
-//     blogPostItems.push({ text: `${blogPost.title}`, link: blogPost.path.split('.html')[0] })
-// }
 
-// const articlePosts = (data['articles'] || []).sort(
-//     (a, b) => new Date(b.updated) - new Date(a.updated)
-// )
-// const articlePostItems = []
-// for (const articlePost of articlePosts) {
-//     articlePostItems.push({ text: `${articlePost.title}`, link: articlePost.path.split('.html')[0] })
-// }
-
-const projectPosts = (data['projects'] || []).sort(
-    (a, b) => new Date(b.updated) - new Date(a.updated)
-)
-const projectPostItems = []
-for (const projectPost of projectPosts) {
-    projectPostItems.push({ text: `${projectPost.title}`, link: projectPost.path.split('.html')[0] })
+// --- sort helpers ---
+function sortByFileName(a, b) {
+    const nameA = a.path.split('/').pop().replace('.html', '')
+    const nameB = b.path.split('/').pop().replace('.html', '')
+    return nameA.localeCompare(nameB, undefined, { sensitivity: 'base' })
 }
 
-const photographyPosts = (data['photography'] || []).sort(
-    (a, b) => new Date(b.updated) - new Date(a.updated)
-)
-const photographyPostItems = []
-for (const photographyPost of photographyPosts) {
-    photographyPostItems.push({ text: `${photographyPost.title}`, link: photographyPost.path.split('.html')[0] })
-}
+// --- PROJECTS ---
+const projectPosts = (data['projects'] || []).sort(sortByFileName)
+const projectPostItems = projectPosts.map(projectPost => ({
+    text: projectPost.title,
+    link: projectPost.path.split('.html')[0]
+}))
+
+// --- PHOTOGRAPHY ---
+const photographyPosts = (data['photography'] || []).sort(sortByFileName)
+const photographyPostItems = photographyPosts.map(photographyPost => ({
+    text: photographyPost.title,
+    link: photographyPost.path.split('.html')[0]
+}))
 
 export default defineConfig({
     description: 'Andre Pestana website',
@@ -58,18 +48,6 @@ export default defineConfig({
             { text: 'About', link: '/about.html' },
         ],
         sidebar: {
-            // '/sections/blog/': [
-            //     {
-            //         text: 'Blog',
-            //         items: blogPostItems
-            //     }
-            // ],
-            // '/sections/articles/': [
-            //     {
-            //         text: 'Articles',
-            //         items: articlePostItems
-            //     }
-            // ],
             '/sections/photography/': [
                 {
                     text: 'Photography',
