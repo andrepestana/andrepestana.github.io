@@ -8,13 +8,13 @@ Here you can find some articles about things I use or find interesting.
 
 <div v-for="article in articles">
 
-  <h2><a :href="`${constants.baseUrl}${article.path}`">{{ article.title }}</a></h2>
+  <h2><a :href="`${constants.baseUrl}/${article.path}`">{{ article.title }}</a></h2>
 
 {{ article.excerpt }}
 
-  <p style="text-align: right"><a :href="`${constants.baseUrl}${article.path}`">Read more</a></p>
+  <p style="text-align: right"><a :href="`${constants.baseUrl}/${article.path}`">Read more</a></p>
 
-**~ {{ article.author }}** ({{ transformDate(article.updated) }})
+**{{ article.author }}** ({{ transformDate(article.updated) }})
 
 </div>
 

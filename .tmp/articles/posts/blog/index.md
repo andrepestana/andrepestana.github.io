@@ -6,11 +6,11 @@ layout: doc
 
 <div v-for="post in posts">
 
-<h2><a :href="`${constants.baseUrl}${post.path}`">{{ post.title }}</a></h2>
+<h2><a :href="`${constants.baseUrl}/${post.path}`">{{ post.title }}</a></h2>
 
 {{ post.excerpt }}
 
-<p style="text-align: right"><a :href="`${constants.baseUrl}${post.path}`">📖 Read more</a></p>
+<p style="text-align: right"><a :href="`${constants.baseUrl}/${post.path}`">📖 Read more</a></p>
 
 **~ {{ post.author }}** ({{ transformDate(post.updated) }})
 
