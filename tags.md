@@ -7,7 +7,7 @@
     <hr/>
     <div v-for="(taggedPage, index) in taggedPages" 
         :key="index">
-        <a :href="taggedPage.link">{{taggedPage.title}}</a>
+        <a :href="taggedPage.link"><span v-html="taggedPage.title" /></a>
     </div>
 </div>
 <span v-for="(tag, index) in tagLabels" 
