@@ -8,11 +8,11 @@ Here you can find some of my personal projects.
 
 <div v-for="project in projects">
 
-  <h2><a :href="`${constants.baseUrl}/${project.path}`">{{ project.title }}</a></h2>
+  <h2><a :href="`${constants.baseUrl}${project.path}`">{{ project.title }}</a></h2>
 
 {{ project.excerpt }}
 
-  <p style="text-align: right"><a :href="`${constants.baseUrl}/${project.path}`">Read more</a></p>
+  <p style="text-align: right"><a :href="`${constants.baseUrl}${project.path}`">Read more</a></p>
 
 **~ {{ project.author }}** ({{ transformDate(project.updated) }})
 
