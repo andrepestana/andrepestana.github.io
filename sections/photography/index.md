@@ -10,7 +10,7 @@ Here you can find some of my shots. It's been a long time since I bought a Nikon
   <h2><a :href="`${constants.baseUrl}${article.path}`" v-html="article.titleHtml"></a></h2>
   <div v-html="article.excerptHtml"></div>
   <p style="text-align: right"><a :href="`${constants.baseUrl}${article.path}`">Read more</a></p>
-  <strong>~ {{ article.author }}</strong> ({{ transformDate(article.updated) }})
+  <strong>{{ article.author }}</strong> ({{ transformDate(article.updated) }})
 </div>
 
 <script setup>
