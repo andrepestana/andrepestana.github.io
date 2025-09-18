@@ -5,29 +5,30 @@ import { imagetools } from 'vite-imagetools'
 
 // Shim Web Crypto for Node.js
 if (!globalThis.crypto) {
-    globalThis.crypto = webcrypto;
+    globalThis.crypto = webcrypto
 }
-
 
 // --- sort helpers ---
 function sortByFileName(a, b) {
-    const nameA = a.path.split('/').pop().replace('.html', '')
-    const nameB = b.path.split('/').pop().replace('.html', '')
-    return nameA.localeCompare(nameB, undefined, { sensitivity: 'base' })
+    // Prefer extensionless link; fall back to path
+    const getName = (x) => (x.link || x.path).split('/').pop().replace(/\.html$/, '')
+    const nameA = getName(a)
+    const nameB = getName(b)
+    return nameA.localeCompare(nameB, undefined, { sensitivity: 'base', numeric: true })
 }
 
 // --- PROJECTS ---
 const projectPosts = (data['projects'] || []).sort(sortByFileName)
-const projectPostItems = projectPosts.map(projectPost => ({
-    text: projectPost.title,
-    link: projectPost.path.split('.html')[0]
+const projectPostItems = projectPosts.map(p => ({
+    text: p.title,         // If you ever want superscripts here, you'd need a custom renderer with v-html
+    link: p.link           // <-- use the extensionless, absolute route from data.json
 }))
 
 // --- PHOTOGRAPHY ---
 const photographyPosts = (data['photography'] || []).sort(sortByFileName)
-const photographyPostItems = photographyPosts.map(photographyPost => ({
-    text: photographyPost.title,
-    link: photographyPost.path.split('.html')[0]
+const photographyPostItems = photographyPosts.map(p => ({
+    text: p.title,
+    link: p.link           // <-- use the extensionless, absolute route
 }))
 
 export default defineConfig({
@@ -40,9 +41,7 @@ export default defineConfig({
     themeConfig: {
         siteTitle: 'Andre Pestana',
         nav: [
-            //{ text: 'Blog', link: '/sections/blog/' },
             { text: 'Photography', link: '/sections/photography/' },
-            //{ text: 'Articles', link: '/sections/articles/' },
             { text: 'Projects', link: '/sections/projects/' },
             { text: 'Tags', link: '/tags.html' },
             { text: 'About', link: '/about.html' },

@@ -23,7 +23,8 @@ import {computed, onMounted, ref} from 'vue';
 import tags from './tags.json'
 import {useRouter} from "vitepress";
 
-const queryString = window.location.search;
+let queryString = {};
+if (typeof window !== 'undefined') queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const tagFromQueryParams = urlParams.get('tag')
 console.log('tagFromQueryParams', tagFromQueryParams)

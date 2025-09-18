@@ -41,10 +41,9 @@ function extractExcerptSrc(fullContent) {
 
 function renderExcerptHtml(excerptSrc) {
   // If it looks like HTML, decode entities first so <sup> becomes real tags.
-  const looksLikeHtml = /<[^>]+>/.test((excerptSrc || '').trim())
-  const input = looksLikeHtml ? decode(excerptSrc) : excerptSrc
-
-  const rendered = looksLikeHtml ? input : md.render(input)
+  const looksHtml = /<[^>]+>/.test((excerptSrc || '').trim())
+  const input = looksHtml ? decode(excerptSrc) : excerptSrc
+  const rendered = looksHtml ? input : md.render(input)
 
   return sanitizeHtml(rendered, {
     allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img', 'sup']),
@@ -68,9 +67,13 @@ const articles = {}
 for (const section of sections) {
   const dir = `./sections/${section}/posts`
   const files = await fs.readdir(dir)
+
+  // natural, case-insensitive alphabetical sort
+  const collator = new Intl.Collator(undefined, { numeric: true, sensitivity: 'base' })
   const targetFiles = files
     .filter(f => path.extname(f).toLowerCase() === '.md')
-    .sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }))
+    .sort(collator.compare)
+
   articles[section] = targetFiles
 }
 
@@ -80,13 +83,12 @@ for (const section of sections) {
 
   const sectionData = await Promise.all(
     articles[section].map(async (filename) => {
-      const absPath = path.join(dir, filename)
+      const absPath = path.join(dir, filename) // e.g. "./sections/photography/posts/2025-08-22.md"
       const raw = readFileSync(absPath, 'utf8')
       const file = matter(raw)
       const fm = file.data || {}
 
       const excerptSrc = extractExcerptSrc(file.content)
-
       const excerptHtml = renderExcerptHtml(excerptSrc)
       const excerptText = removeMd(excerptSrc).replace(/\s{2,}/g, ' ').trim()
 
@@ -95,21 +97,24 @@ for (const section of sections) {
         fm.title ||
         (file.content.match(/^#\s+(.+)$/m)?.[1]?.trim()) ||
         base
+
       const titleHtml = sanitizeHtml(inferredTitle, {
         allowedTags: sanitizeHtml.defaults.allowedTags.concat(['sup']),
         allowedAttributes: { sup: ['id', 'class'] }
       })
 
-      const linkPath = absPath
-        .replace(/^\./, '')
-        .replace(/\.md$/i, '.html')
-        .replace(/\\/g, '/')
+      // Build clean routes for VitePress:
+      // - link: extensionless and with leading slash (used by sidebar/pager)
+      // - path: .html with leading slash (still useful elsewhere)
+      const routeBase = `/sections/${section}/posts/${base}`
+      const pathHtml = `${routeBase}.html`
 
       return {
         ...fm,
-        title: inferredTitle,      // plain text fallback
-        titleHtml,                 // new field: safe HTML
-        path: linkPath,
+        title: inferredTitle,   // plain text fallback
+        titleHtml,              // safe HTML version if you want to render with v-html
+        path: pathHtml,         // "/sections/.../file.html"
+        link: routeBase,        // "/sections/.../file" (THIS is what sidebar should use)
         excerpt: excerptText,
         excerptHtml
       }
@@ -121,7 +126,7 @@ for (const section of sections) {
 
 await fs.writeFile('./data.json', JSON.stringify(data, null, 2), 'utf-8')
 
-// tags.json generation unchanged, but keep using the same link/title logic...
+// tags.json generation unchanged (keeps .html links), but you could also emit both if desired
 const allTags = {}
 for (const section of sections) {
   const dir = `./sections/${section}/posts`
@@ -133,7 +138,7 @@ for (const section of sections) {
 
     const base = filename.replace(/\.md$/i, '')
     const title = fm.title || (file.content.match(/^#\s+(.+)$/m)?.[1]?.trim()) || base
-    const link = absPath.replace(/^\./, '').replace(/\.md$/i, '.html').replace(/\\/g, '/')
+    const link = `/sections/${section}/posts/${base}.html` // keep .html for tags page
 
     if (fm.tags) {
       const tags = String(fm.tags).split(',').map(t => t.trim()).filter(Boolean)

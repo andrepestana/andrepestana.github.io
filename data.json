@@ -6,7 +6,8 @@
       "updated": "2025-08-01T20:08:21.000Z",
       "tags": "photography, nature, birds, owl",
       "titleHtml": "July 30<sup>th</sup> 2025 - Great Horned Owl",
-      "path": "sections/photography/posts/2025-07-30.html",
+      "path": "/sections/photography/posts/2025-07-30.html",
+      "link": "/sections/photography/posts/2025-07-30",
       "excerpt": "",
       "excerptHtml": ""
     },
@@ -16,7 +17,8 @@
       "updated": "2025-09-08T22:18:21.000Z",
       "tags": "photography, nature, birds, hawk, squirrel",
       "titleHtml": "August 22<sup>nd</sup> 2025 - Cooper's Hawk",
-      "path": "sections/photography/posts/2025-08-22.html",
+      "path": "/sections/photography/posts/2025-08-22.html",
+      "link": "/sections/photography/posts/2025-08-22",
       "excerpt": "",
       "excerptHtml": ""
     },
@@ -26,7 +28,8 @@
       "updated": "2025-09-08T22:13:51.000Z",
       "tags": "photography, nature, birds, woodpecker",
       "titleHtml": "August 24<sup>th</sup> 2025 - Hairy Woodpecker",
-      "path": "sections/photography/posts/2025-08-24.html",
+      "path": "/sections/photography/posts/2025-08-24.html",
+      "link": "/sections/photography/posts/2025-08-24",
       "excerpt": "",
       "excerptHtml": ""
     },
@@ -36,7 +39,8 @@
       "updated": "2025-09-08T21:48:21.000Z",
       "tags": "photography, nature, birds, owl",
       "titleHtml": "August 28<sup>th</sup> 2025 - Eastern Towhee and Barred Owl",
-      "path": "sections/photography/posts/2025-08-28.html",
+      "path": "/sections/photography/posts/2025-08-28.html",
+      "link": "/sections/photography/posts/2025-08-28",
       "excerpt": "",
       "excerptHtml": ""
     },
@@ -46,7 +50,8 @@
       "updated": "2025-09-08T21:11:21.000Z",
       "tags": "photography, nature, birds, heron",
       "titleHtml": "August 31<sup>st</sup> 2025 - Young Great Blue Heron",
-      "path": "sections/photography/posts/2025-08-31.html",
+      "path": "/sections/photography/posts/2025-08-31.html",
+      "link": "/sections/photography/posts/2025-08-31",
       "excerpt": "",
       "excerptHtml": ""
     },
@@ -56,7 +61,8 @@
       "updated": "2025-09-07T20:11:20.000Z",
       "tags": "photography, nature, birds, owl",
       "titleHtml": "September 5<sup>th</sup> 2025 - Barred Owl",
-      "path": "sections/photography/posts/2025-09-05.html",
+      "path": "/sections/photography/posts/2025-09-05.html",
+      "link": "/sections/photography/posts/2025-09-05",
       "excerpt": "",
       "excerptHtml": ""
     },
@@ -66,7 +72,8 @@
       "updated": "2025-09-07T20:11:20.000Z",
       "tags": "photography, salmon, fish, nature, birds, landscape, heron",
       "titleHtml": "September 7<sup>th</sup> 2025 - Malahat / Stamp Falls",
-      "path": "sections/photography/posts/2025-09-07.html",
+      "path": "/sections/photography/posts/2025-09-07.html",
+      "link": "/sections/photography/posts/2025-09-07",
       "excerpt": "",
       "excerptHtml": ""
     }
@@ -79,7 +86,8 @@
       "tags": "web, blog, vue.js, javascript, vitepress",
       "giphyPaddingBottom": "75%",
       "titleHtml": "My own website",
-      "path": "sections/projects/posts/my-own-website.html",
+      "path": "/sections/projects/posts/my-own-website.html",
+      "link": "/sections/projects/posts/my-own-website",
       "excerpt": "",
       "excerptHtml": ""
     },
@@ -90,7 +98,8 @@
       "tags": "game, javascript, phaser, fun",
       "giphyPaddingBottom": "77%",
       "titleHtml": "Pestana World game",
-      "path": "sections/projects/posts/pestana-world-game.html",
+      "path": "/sections/projects/posts/pestana-world-game.html",
+      "link": "/sections/projects/posts/pestana-world-game",
       "excerpt": "",
       "excerptHtml": ""
     }
