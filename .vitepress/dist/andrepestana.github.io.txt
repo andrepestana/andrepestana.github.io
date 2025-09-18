@@ -1,9 +1,0 @@
-title andrepestana.github.io
-
-Editor->Local source: edit page
-Editor->Local Vitepress: call build command
-Local Vitepress->Local source: create dist folder with static content;\nindex data;\ncreate tags;
-Editor->Local Vitepress: ./publish.sh
-Local Vitepress->Github:push code
-Github-> Github Actions: runs on push
-Github Actions->Github Pages:publish
