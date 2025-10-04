@@ -18,14 +18,14 @@ function sortByFileName(a, b) {
 }
 
 // --- PROJECTS ---
-const projectPosts = (data['projects'] || []).sort(sortByFileName)
+const projectPosts = (data['projects'] || []).sort(sortByFileName).reverse();
 const projectPostItems = projectPosts.map(p => ({
     text: p.title,         // If you ever want superscripts here, you'd need a custom renderer with v-html
     link: p.link           // <-- use the extensionless, absolute route from data.json
 }))
 
 // --- PHOTOGRAPHY ---
-const photographyPosts = (data['photography'] || []).sort(sortByFileName)
+const photographyPosts = (data['photography'] || []).sort(sortByFileName).reverse();
 const photographyPostItems = photographyPosts.map(p => ({
     text: p.title,
     link: p.link           // <-- use the extensionless, absolute route

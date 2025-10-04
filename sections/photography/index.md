@@ -4,7 +4,9 @@ layout: doc
 
 # Photography
 
-Here you can find some of my shots. It's been a long time since I bought a Nikon D3100 in 2011 but the hobby started kick me in in 2024/2025.
+Here you can find some of my shots. It's been a long time since I bought a Nikon D3100 in 2011 but the hobby started kick me in in 2024/2025. Now the gear has changed and I'm trying different lenses, cameras and software for post edition.
+
+Many of my latest photos of wildlife becauseu I'm surrounded by such a great nature in Vancouver Island but I enjoy all kinds of photography.
 
 <AllPhotosGallery />
 
