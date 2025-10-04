@@ -22,7 +22,7 @@
     },
     {
       "link": "/sections/photography/posts/2025-09-05.html",
-      "title": "September 5<sup>th</sup> 2025 - Barred Owl"
+      "title": "September 5<sup>th</sup> 2025 - RibFest"
     },
     {
       "link": "/sections/photography/posts/2025-09-07.html",
@@ -63,10 +63,6 @@
       "title": "August 31<sup>st</sup> 2025 - Young Great Blue Heron"
     },
     {
-      "link": "/sections/photography/posts/2025-09-05.html",
-      "title": "September 5<sup>th</sup> 2025 - Barred Owl"
-    },
-    {
       "link": "/sections/photography/posts/2025-09-07.html",
       "title": "September 7<sup>th</sup> 2025 - Malahat / Stamp Falls"
     },
@@ -105,10 +101,6 @@
       "title": "August 31<sup>st</sup> 2025 - Young Great Blue Heron"
     },
     {
-      "link": "/sections/photography/posts/2025-09-05.html",
-      "title": "September 5<sup>th</sup> 2025 - Barred Owl"
-    },
-    {
       "link": "/sections/photography/posts/2025-09-07.html",
       "title": "September 7<sup>th</sup> 2025 - Malahat / Stamp Falls"
     },
@@ -133,10 +125,6 @@
     {
       "link": "/sections/photography/posts/2025-08-28.html",
       "title": "August 28<sup>th</sup> 2025 - Eastern Towhee and Barred Owl"
-    },
-    {
-      "link": "/sections/photography/posts/2025-09-05.html",
-      "title": "September 5<sup>th</sup> 2025 - Barred Owl"
     },
     {
       "link": "/sections/photography/posts/2025-09-16.html",
@@ -181,6 +169,18 @@
     {
       "link": "/sections/photography/posts/2025-09-12.html",
       "title": "September 12<sup>th</sup> 2025 - Great Blue Heron at Esquimalt Lagoon"
+    }
+  ],
+  "festival": [
+    {
+      "link": "/sections/photography/posts/2025-09-05.html",
+      "title": "September 5<sup>th</sup> 2025 - RibFest"
+    }
+  ],
+  "food": [
+    {
+      "link": "/sections/photography/posts/2025-09-05.html",
+      "title": "September 5<sup>th</sup> 2025 - RibFest"
     }
   ],
   "salmon": [
