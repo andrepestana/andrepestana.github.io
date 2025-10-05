@@ -51,6 +51,18 @@
     {
       "link": "/sections/photography/posts/2025-09-16.html",
       "title": "September 16<sup>th</sup> 2025 - Barred owl"
+    },
+    {
+      "link": "/sections/photography/posts/2025-09-18.html",
+      "title": "September 18<sup>th</sup> 2025 - Barred owl and squirrel"
+    },
+    {
+      "link": "/sections/photography/posts/2025-09-19.html",
+      "title": "September 19<sup>th</sup> 2025 - Great Blue Herons"
+    },
+    {
+      "link": "/sections/photography/posts/2025-09-27.html",
+      "title": "September 27<sup>th</sup> 2025 - Black Bear"
     }
   ],
   "nature": [
@@ -93,6 +105,18 @@
     {
       "link": "/sections/photography/posts/2025-09-16.html",
       "title": "September 16<sup>th</sup> 2025 - Barred owl"
+    },
+    {
+      "link": "/sections/photography/posts/2025-09-18.html",
+      "title": "September 18<sup>th</sup> 2025 - Barred owl and squirrel"
+    },
+    {
+      "link": "/sections/photography/posts/2025-09-19.html",
+      "title": "September 19<sup>th</sup> 2025 - Great Blue Herons"
+    },
+    {
+      "link": "/sections/photography/posts/2025-09-27.html",
+      "title": "September 27<sup>th</sup> 2025 - Black Bear"
     }
   ],
   "birds": [
@@ -135,6 +159,14 @@
     {
       "link": "/sections/photography/posts/2025-09-16.html",
       "title": "September 16<sup>th</sup> 2025 - Barred owl"
+    },
+    {
+      "link": "/sections/photography/posts/2025-09-18.html",
+      "title": "September 18<sup>th</sup> 2025 - Barred owl and squirrel"
+    },
+    {
+      "link": "/sections/photography/posts/2025-09-19.html",
+      "title": "September 19<sup>th</sup> 2025 - Great Blue Herons"
     }
   ],
   "owl": [
@@ -153,6 +185,10 @@
     {
       "link": "/sections/photography/posts/2025-09-16.html",
       "title": "September 16<sup>th</sup> 2025 - Barred owl"
+    },
+    {
+      "link": "/sections/photography/posts/2025-09-18.html",
+      "title": "September 18<sup>th</sup> 2025 - Barred owl and squirrel"
     }
   ],
   "sunset": [
@@ -203,6 +239,10 @@
     {
       "link": "/sections/photography/posts/2025-08-22.html",
       "title": "August 22<sup>nd</sup> 2025 - Cooper's Hawk"
+    },
+    {
+      "link": "/sections/photography/posts/2025-09-18.html",
+      "title": "September 18<sup>th</sup> 2025 - Barred owl and squirrel"
     }
   ],
   "woodpecker": [
@@ -227,6 +267,10 @@
     {
       "link": "/sections/photography/posts/2025-09-12.html",
       "title": "September 12<sup>th</sup> 2025 - Great Blue Heron at Esquimalt Lagoon"
+    },
+    {
+      "link": "/sections/photography/posts/2025-09-19.html",
+      "title": "September 19<sup>th</sup> 2025 - Great Blue Herons"
     }
   ],
   "festival": [
@@ -257,6 +301,24 @@
     {
       "link": "/sections/photography/posts/2025-09-07.html",
       "title": "September 7<sup>th</sup> 2025 - Stamp Falls"
+    }
+  ],
+  "golden hour": [
+    {
+      "link": "/sections/photography/posts/2025-09-19.html",
+      "title": "September 19<sup>th</sup> 2025 - Great Blue Herons"
+    }
+  ],
+  "silhouette": [
+    {
+      "link": "/sections/photography/posts/2025-09-19.html",
+      "title": "September 19<sup>th</sup> 2025 - Great Blue Herons"
+    }
+  ],
+  "black bear": [
+    {
+      "link": "/sections/photography/posts/2025-09-27.html",
+      "title": "September 27<sup>th</sup> 2025 - Black Bear"
     }
   ],
   "web": [
