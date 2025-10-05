@@ -63,6 +63,14 @@
     {
       "link": "/sections/photography/posts/2025-09-27.html",
       "title": "September 27<sup>th</sup> 2025 - Black Bear"
+    },
+    {
+      "link": "/sections/photography/posts/2025-09-28.html",
+      "title": "September 28<sup>th</sup> 2025 - Slug"
+    },
+    {
+      "link": "/sections/photography/posts/2025-09-30.html",
+      "title": "September 30<sup>th</sup> 2025 - Elk"
     }
   ],
   "nature": [
@@ -117,6 +125,14 @@
     {
       "link": "/sections/photography/posts/2025-09-27.html",
       "title": "September 27<sup>th</sup> 2025 - Black Bear"
+    },
+    {
+      "link": "/sections/photography/posts/2025-09-28.html",
+      "title": "September 28<sup>th</sup> 2025 - Slug"
+    },
+    {
+      "link": "/sections/photography/posts/2025-09-30.html",
+      "title": "September 30<sup>th</sup> 2025 - Elk"
     }
   ],
   "birds": [
@@ -319,6 +335,24 @@
     {
       "link": "/sections/photography/posts/2025-09-27.html",
       "title": "September 27<sup>th</sup> 2025 - Black Bear"
+    }
+  ],
+  "slug": [
+    {
+      "link": "/sections/photography/posts/2025-09-28.html",
+      "title": "September 28<sup>th</sup> 2025 - Slug"
+    }
+  ],
+  "macro": [
+    {
+      "link": "/sections/photography/posts/2025-09-28.html",
+      "title": "September 28<sup>th</sup> 2025 - Slug"
+    }
+  ],
+  "elk": [
+    {
+      "link": "/sections/photography/posts/2025-09-30.html",
+      "title": "September 30<sup>th</sup> 2025 - Elk"
     }
   ],
   "web": [
