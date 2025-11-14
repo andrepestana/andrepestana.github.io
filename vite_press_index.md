@@ -15,9 +15,10 @@ layout: home
 pageClass: landing-fixed-bg
 hero:
   name: Andre Pestana
-  text: Between logic and imagination
+  text: Software Developer
   tagline: |
-    Learning, creating, and moving forward.
+    Man improves himself as he follows his path.
+    — Paulo Coelho
   image: /avatar.jpeg
   actions:
     - theme: brand
@@ -46,13 +47,61 @@ customFeatures:
 aside: false
 ---
 
-<section class="ap-section fixed-bg" style="--bg: url('/bg-1.jpg')">
+<!--
+  Replace the image URLs below with your own (ideally ~2500–3000px wide, compressed).
+  Each section uses a fixed background on desktop; on mobile it scrolls for performance.
+-->
+
+<section class="ap-section fixed-bg" style="--bg: url('/images/landing/bg-1.jpg')">
   <div class="ap-inner">
     <h2>Photography</h2>
-    <p>Wildlife and landscapes from Vancouver Island and beyond.</p>
+    <p>Wildlife and landscapes from Vancouver Island and beyond. High‑resolution galleries, EXIF details, and field notes.</p>
     <p>
       <a class="VPButton brand" href="/sections/photography/index.html">Explore photos</a>
     </p>
+  </div>
+</section>
+
+<section class="ap-section content-card">
+  <div class="ap-inner two-col">
+    <div>
+      <h3>Software Development</h3>
+      <p>Full‑stack engineer: TypeScript · Vue · Node · Python · Java · REST · SQL/NoSQL · CI/CD · Cloud‑native.</p>
+      <p>
+        <a class="VPButton" href="/sections/projects/index.html">See projects</a>
+      </p>
+    </div>
+    <ul class="ap-feature-list">
+      <li><span>⚡</span> Frontend architecture with accessibility in mind</li>
+      <li><span>🧪</span> QA automation and performance testing</li>
+      <li><span>☁️</span> DevOps, containers, and IaC workflows</li>
+    </ul>
+  </div>
+</section>
+
+<section class="ap-section fixed-bg" style="--bg: url('/images/landing/bg-2.jpg')">
+  <div class="ap-inner">
+    <h2>Blog & Notes</h2>
+    <p>Short, practical write‑ups on engineering, learning languages, and creative experiments.</p>
+    <p>
+      <a class="VPButton" href="/sections/articles/index.html">Read the blog</a>
+    </p>
+  </div>
+</section>
+
+<section class="ap-section content-card">
+  <div class="ap-inner">
+    <h3>Get in touch</h3>
+    <p>
+      Say hello on <a href="https://www.linkedin.com/in/andrepestana/" target="_blank" rel="noopener">LinkedIn</a> or check my code on <a href="https://github.com/andrepestana/" target="_blank" rel="noopener">GitHub</a>.
+    </p>
+  </div>
+</section>
+
+<section class="ap-section fixed-bg" style="--bg: url('/images/landing/bg-3.jpg')">
+  <div class="ap-inner">
+    <h2>Thanks for visiting 👋</h2>
+    <p>Scroll, explore, and enjoy the static backgrounds. Images stay put — content glides.</p>
   </div>
 </section>
 
@@ -80,7 +129,7 @@ onUnmounted(() => {
   z-index: 1; /* place content on top of overlay */
   max-width: var(--vp-layout-max-width, 1100px);
   margin: 0 auto;
-  padding: 1vh 1.25rem 20vh;
+  padding: 18vh 1.25rem 20vh;
 }
 
 /* Fixed background sections (desktop) */
@@ -133,26 +182,12 @@ onUnmounted(() => {
 /* Improve readability on narrow screens and iOS (performance) */
 @media (max-width: 860px) {
   .fixed-bg { background-attachment: scroll; }
-  .ap-inner { padding: 0 1rem 14vh; }
+  .ap-inner { padding: 14vh 1rem 14vh; }
 }
 
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .landing-fixed-bg .VPContent { scroll-snap-type: none; }
 }
-
-.vp-doc h2 {
-  border: 0;
-  margin: 0;
-}
-
-h1 .text {
-  font-weight: 100 !important; 
-  font-size: 32px !important;
-}
-@media (max-width: 640px) {
-h1 .text { 
-  font-size: 26px !important;
-}
-}
 </style>
+

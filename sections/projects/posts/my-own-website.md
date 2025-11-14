@@ -3,8 +3,6 @@ title: My own website
 updated: 2022-10-16 12:19:10-07
 author: Andre Pestana
 tags: web, blog, vue.js, javascript, vitepress
-# giphy: https://giphy.com/embed/l2JdTkHW1KZPdvdS0
-giphyPaddingBottom: 75%
 ---
 
 <!-- excerpt -->
@@ -23,5 +21,3 @@ This website is coded using [Vitepress](https://vitepress.vuejs.org/) that is a 
 ## Source code
 
 [Source code on Github](https://github.com/andrepestana/andrepestana.github.io)
-
-

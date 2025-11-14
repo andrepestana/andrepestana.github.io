@@ -5,6 +5,7 @@ updated: 2024-07-03 07:20:09
 
 ## Me, myself and I
 
+<img src="/andre_portrait.jpg" alt="Andre Pestana" style="float: right; padding: 1rem;" width="50%" />
 My name is André Pestana, and I’m a Brazilian who made the life-changing decision to immigrate to Canada. Now in my forties, I’ve faced many challenges — not only as a husband and father but also as an immigrant and a professional navigating new landscapes. Each of these roles has shaped who I am today.
 
 <!-- more -->

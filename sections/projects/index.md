@@ -6,13 +6,14 @@ layout: doc
 
 Here you can find some of my personal projects.
 
-<div v-for="project in projects">
-
+<div v-for="project in projects" :key="project.path">
   <h2><a :href="`${constants.baseUrl}${project.path}`">{{ project.title }}</a></h2>
 
-{{ project.excerpt }}
+  <div v-if="project.excerptHtml" class="excerpt" v-html="project.excerptHtml"></div>
 
-  <p style="text-align: right"><a :href="`${constants.baseUrl}${project.path}`">Read more</a></p>
+  <p style="text-align:right">
+    <a :href="`${constants.baseUrl}${project.path}`">Read more</a>
+  </p>
 
 **{{ project.author }}** ({{ transformDate(project.updated) }})
 

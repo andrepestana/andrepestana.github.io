@@ -152,4 +152,52 @@ const { frontmatter, page } = useData()
     flex: 1 1 100%;
   }
 }
+
+
+/* Base width tokens used across the default theme */
+:root {
+  /* overall max width of the layout (nav, home, docs) */
+  --vp-layout-max-width: 1280px;
+  /* default ~1100–1200; bump a bit */
+  /* width of the reading column inside docs pages */
+  --vp-layout-content-width: 860px;
+  /* default ~720–780; widen slightly */
+  /* optional: widen sidebar if you use long titles */
+  --vp-sidebar-width: 288px;
+}
+
+/* Scale up on big screens */
+@media (min-width: 1400px) {
+  :root {
+    --vp-layout-max-width: 1440px;
+    --vp-layout-content-width: 920px;
+  }
+}
+
+@media (min-width: 1680px) {
+  :root {
+    --vp-layout-max-width: 1600px;
+    --vp-layout-content-width: 980px;
+  }
+}
+
+/* Ensure containers honor the variables (future-proof selectors) */
+.VPContent,
+.VPDoc .container,
+.VPHome,
+.VPNavBar .container {
+  max-width: var(--vp-layout-max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Keep text readable: cap paragraph line-length */
+.VPDoc .content {
+  max-width: var(--vp-layout-content-width);
+}
+
+/* Optional: slightly widen the right “On this page” aside */
+.VPDoc.aside .aside {
+  width: 280px;
+}
 </style>
