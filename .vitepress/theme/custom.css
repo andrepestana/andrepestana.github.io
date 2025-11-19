@@ -86,16 +86,3 @@
   }
 }
 
-/* justify body text for docs and pages */
-.VPDoc .content,
-.VPDoc .content p {
-  text-align: justify;
-  text-justify: inter-word;
-  padding-right: 1rem;
-}
-
-/* optional: also justify text inside lists, blockquotes, etc. */
-.VPDoc .content li,
-.VPDoc .content blockquote {
-  text-align: justify;
-}

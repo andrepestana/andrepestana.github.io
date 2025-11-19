@@ -71,6 +71,18 @@
     {
       "link": "/sections/photography/posts/2025-09-30.html",
       "title": "September 30<sup>th</sup> 2025 - Elk"
+    },
+    {
+      "link": "/sections/photography/posts/2025-10-22.html",
+      "title": "October 22<sup>nd</sup> 2025 - Pileated Woodpecker"
+    },
+    {
+      "link": "/sections/photography/posts/2025-11-11.html",
+      "title": "November 11<sup>th</sup> 2025 - Parliament Buildings"
+    },
+    {
+      "link": "/sections/photography/posts/2025-11-16.html",
+      "title": "November 16<sup>th</sup> 2025 - Ross Bay Cemetery"
     }
   ],
   "nature": [
@@ -269,6 +281,10 @@
     {
       "link": "/sections/photography/posts/2025-09-13.html",
       "title": "September 13<sup>th</sup> 2025 - Pileated Woodpecker and Red-Tailed Hawk"
+    },
+    {
+      "link": "/sections/photography/posts/2025-10-22.html",
+      "title": "October 22<sup>nd</sup> 2025 - Pileated Woodpecker"
     }
   ],
   "heron": [
@@ -353,6 +369,42 @@
     {
       "link": "/sections/photography/posts/2025-09-30.html",
       "title": "September 30<sup>th</sup> 2025 - Elk"
+    }
+  ],
+  "bird": [
+    {
+      "link": "/sections/photography/posts/2025-10-22.html",
+      "title": "October 22<sup>nd</sup> 2025 - Pileated Woodpecker"
+    }
+  ],
+  "building": [
+    {
+      "link": "/sections/photography/posts/2025-11-11.html",
+      "title": "November 11<sup>th</sup> 2025 - Parliament Buildings"
+    }
+  ],
+  "architecture": [
+    {
+      "link": "/sections/photography/posts/2025-11-11.html",
+      "title": "November 11<sup>th</sup> 2025 - Parliament Buildings"
+    }
+  ],
+  "cemetery": [
+    {
+      "link": "/sections/photography/posts/2025-11-16.html",
+      "title": "November 16<sup>th</sup> 2025 - Ross Bay Cemetery"
+    }
+  ],
+  "angel": [
+    {
+      "link": "/sections/photography/posts/2025-11-16.html",
+      "title": "November 16<sup>th</sup> 2025 - Ross Bay Cemetery"
+    }
+  ],
+  "historic": [
+    {
+      "link": "/sections/photography/posts/2025-11-16.html",
+      "title": "November 16<sup>th</sup> 2025 - Ross Bay Cemetery"
     }
   ],
   "web": [
