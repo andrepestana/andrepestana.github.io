@@ -23,9 +23,8 @@ To install the Rule of Three app, follow these steps:
 
 1. Open the Rule of Three app on your Android device.
 2. Enter the three known values in the provided input fields.
-3. Tap the "Calculate" button to compute the fourth value.
-4. View the result displayed on the screen along with an explanation of the calculation.
-5. Optionally, share your results using the share button.
+3. View the result displayed on the screen along with an explanation of the calculation.
+4. Optionally, share your results using the share button.
 
 ## Support
 
