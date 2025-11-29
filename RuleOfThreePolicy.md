@@ -1,3 +1,9 @@
+---
+layout: simple
+comments: false
+title: Privacy Policy — Rule of Three
+---
+
 # Privacy Policy — Rule of Three
 
 **Last updated:** 2025-01-27  
@@ -95,5 +101,5 @@ Any changes will be reflected here with an updated “Last updated” date.
 
 If you have questions about this Privacy Policy, contact:
 
-**Email:** andrepestana@gmail.com  
+**Email:** andrepestana+rule_of_three@gmail.com  
 **Developer:** Andre Pestana

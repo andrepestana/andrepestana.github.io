@@ -1,15 +1,20 @@
 <script setup>
+import { computed } from 'vue'
 import { useData } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import Comments from './Comments.vue'
+import SimpleLayout from './SimpleLayout.vue'
 
-const { Layout } = DefaultTheme
+const { Layout: DefaultLayout } = DefaultTheme
 const { frontmatter, page } = useData()
+
+const isSimpleLayout = computed(() => frontmatter.value?.layout === 'simple')
+const layoutComponent = computed(() => (isSimpleLayout.value ? SimpleLayout : DefaultLayout))
 </script>
 
 <template>
-  <Layout>
-    <template #home-hero-after>
+  <component :is="layoutComponent">
+    <template v-if="!isSimpleLayout" #home-hero-after>
       <div class="home-features">
         <div class="container">
           <div class="features">
@@ -36,8 +41,8 @@ const { frontmatter, page } = useData()
         </div>
       </div>
     </template>
-    <div id="fb-root"></div>
-    <template #doc-before>
+    <div v-if="!isSimpleLayout" id="fb-root"></div>
+    <template v-if="!isSimpleLayout" #doc-before>
       <div class="vp-doc">
         <h1 id="frontmatter-title" tabindex="-1">
           <div v-html="frontmatter.title"></div>
@@ -61,10 +66,10 @@ const { frontmatter, page } = useData()
         </div>
       </div>
     </template>
-    <template #doc-after>
+    <template v-if="!isSimpleLayout" #doc-after>
       <Comments v-if="!page.frontmatter.home && frontmatter.comments !== false" />
     </template>
-  </Layout>
+  </component>
 </template>
 <style scoped>
 .home-features {
