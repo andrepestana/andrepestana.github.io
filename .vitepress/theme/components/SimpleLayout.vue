@@ -1,9 +1,11 @@
 <script setup>
-import { Content } from 'vitepress'
+import { Content, useData } from 'vitepress'
+
+const { frontmatter } = useData()
 </script>
 
 <template>
-  <div class="simple-page">
+  <div class="simple-page" :class="{ 'simple-page--wide': frontmatter.wide }">
     <main class="simple-page__body">
       <div class="vp-doc">
         <Content />
@@ -24,6 +26,10 @@ import { Content } from 'vitepress'
   width: min(880px, 100%);
   margin: 0 auto;
   padding: 2.5rem 1.5rem 3rem;
+}
+
+.simple-page--wide .simple-page__body {
+  width: min(1240px, 100%);
 }
 
 @media (max-width: 640px) {

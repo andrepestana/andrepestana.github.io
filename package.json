@@ -26,6 +26,7 @@
     "vue": "^3.4.0"
   },
   "dependencies": {
-    "@giscus/vue": "^3.1.1"
+    "@giscus/vue": "^3.1.1",
+    "hls.js": "^1.7.1"
   }
 }
