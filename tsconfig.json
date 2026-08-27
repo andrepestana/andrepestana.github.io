@@ -10,7 +10,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "useDefineForClassFields": true,
-    "types": ["vite/client", "vitepress", "vite-imagetools"]
+    "types": ["vite/client", "vitepress"]
   },
   "include": [".vitepress/**/*", "**/*.vue", "**/*.ts", "**/*.d.ts"],
   "exclude": ["node_modules", "dist", ".vitepress/cache"]

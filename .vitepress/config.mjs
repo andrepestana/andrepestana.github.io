@@ -4,7 +4,7 @@ import { webcrypto } from 'node:crypto'
 import { readdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import url from 'node:url'
-import { imagetools } from 'vite-imagetools'
+import { metadataPhotoAlbum } from 'vitepress-plugin-metadata-photo-album'
 
 if (!globalThis.crypto) globalThis.crypto = webcrypto
 
@@ -176,7 +176,18 @@ export default defineConfig({
     description: 'Andre Pestana website',
     lang: 'en-US',
     lastUpdated: true,
-    vite: { plugins: [imagetools()] },
+    vite: {
+        plugins: [
+            metadataPhotoAlbum({
+                // The single album will live at photos/photography/.
+                sourceDir: 'photos',
+                outputDir: 'public/generated/photo-albums',
+                publicPath: '/generated/photo-albums/',
+                gps: 'exclude',
+                stripGeneratedMetadata: true
+            })
+        ]
+    },
     themeConfig: {
         siteTitle: 'Andre Pestana',
         nav: [

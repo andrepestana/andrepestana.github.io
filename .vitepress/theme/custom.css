@@ -3,6 +3,13 @@
   --vp-c-brand: #646cff;
   --vp-c-brand-light: #747bff;
   --vp-c-brand-dark: #747bff;
+  --album-overlay: rgb(2 4 6 / 0.97);
+}
+
+.metadata-photo-album {
+  --album-gap: 0.5rem;
+  --album-radius: 0.5rem;
+  --album-grid-min: 180px;
 }
 
 .home-features-container {
@@ -85,4 +92,3 @@
     grid-template-columns: 1fr;
   }
 }
-

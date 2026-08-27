@@ -1,8 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "prebuild": "node scripts/gen-thumbs.mjs",
-    "dev": "concurrently \"nodemon --watch sections -e md collect-data.mjs\" \"vitepress dev\"",
+    "dev": "concurrently \"nodemon --watch sections -e md collect-data.mjs\" \"vitepress dev --force\"",
     "build": "node collect-data.mjs && vitepress build",
     "preview": "vitepress preview"
   },
@@ -20,13 +19,12 @@
     "nodemon": "latest",
     "remove-markdown": "^0.5.0",
     "sanitize-html": "^2.17.0",
-    "sharp": "^0.34.3",
-    "vite-imagetools": "^8.0.0",
     "vitepress": "^1.6.3",
     "vue": "^3.4.0"
   },
   "dependencies": {
     "@giscus/vue": "^3.1.1",
-    "hls.js": "^1.7.1"
+    "hls.js": "^1.7.1",
+    "vitepress-plugin-metadata-photo-album": "^0.1.3"
   }
 }

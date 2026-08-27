@@ -8,7 +8,12 @@ Here you can find some of my shots. It's been a long time since I bought a Nikon
 
 Many of my latest photos of wildlife becauseu I'm surrounded by such a great nature in Vancouver Island but I enjoy all kinds of photography.
 
-<AllPhotosGallery />
+<MetadataPhotoAlbum
+  album="photography"
+  sort="date-desc"
+  :show-captions="true"
+  :show-metadata="true"
+/>
 
 <!-- <div v-for="article in photography" :key="article.path">
   <h2><a :href="`${constants.baseUrl}${article.path}`" v-html="article.titleHtml"></a></h2>
